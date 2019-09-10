@@ -27,6 +27,19 @@ public class Current extends Account {
 				"\n Debit Card Pin is "+debitCardPin);
 		
 	}
+	public String returnInfo() {
+		
+		return("Name: "+name+
+				", Account Number: "+accountNumber+
+				", Adhaar: "+adhaar+
+				", Balance: "+balance+
+				", Rate: "+rate+"%"+
+				", Your Savings Account Features"
+				+ ", Your Current Account features"
+				+ ", Debit Card Number is "+debitCardNumber+
+				", Debit Card Pin is "+debitCardPin);
+		
+	}
 	private void setDebitCard() {
 		Random random= new Random();
 		debitCardNumber= (int) (Math.random()*Math.pow(10, 12));

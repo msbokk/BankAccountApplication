@@ -27,6 +27,18 @@ public class Savings extends Account {
 				+ "\n Safety Deposit Box Pin is "+safetyDepositBoxPin);
 		
 	}
+	public String returnInfo() {
+		
+		return ("Name: "+name+
+				", Account Number: "+accountNumber+
+				", Adhaar: "+adhaar+
+				", Balance: "+balance+
+				", Rate: "+rate+"%"+
+				", Your Savings Account Features"+
+				", Safety Deposit Box Id is "+safetyDepositBoxId+
+				", Safety Deposit Box Pin is "+safetyDepositBoxPin);
+		
+	}
 	private void setSafetyDepositBox() {
 		Random random=new Random();
 		

@@ -1,12 +1,18 @@
 package bankaccountapp;
 
 
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
 public class BankAccountApp {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 	
 		List<Account> accObjList= new LinkedList<Account>();
 		
@@ -39,6 +45,20 @@ public class BankAccountApp {
 			acc.showInfo();
 			System.out.println("*********************");
 		}
+		
+		
+		BufferedWriter fp= new BufferedWriter(new FileWriter("C:\\Users\\Pc\\Downloads\\OutputNewBankAccounts.txt"));
+		for(Account acc:accObjList) {
+			fp.write(acc.returnInfo());
+			fp.newLine();
+			fp.write("-------------------------------------------");
+			fp.newLine();
+			}
+		
+		
+		
+		
+		fp.close();
 
 	}
 	

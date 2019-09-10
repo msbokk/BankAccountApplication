@@ -3,11 +3,11 @@ import java.util.Random;
 
 public abstract class Account implements IBaseRate {
 	//properties for accounts common to current and savings
-	private String name;
-	private String adhaar;
+	protected String name;
+	protected String adhaar;
 	protected String accountNumber;
 	protected double rate;
-	private double balance;
+	protected double balance;
 	private static int index=10000;
 	
 	
@@ -50,6 +50,16 @@ public abstract class Account implements IBaseRate {
 				"\nBalance: "+balance+
 				"\nRate: "+rate+"%");
 		
+		
+	}
+	
+public String returnInfo() {
+		
+		return ("Name: "+name+
+				", Account Number: "+accountNumber+
+				", Adhaar: "+adhaar+
+				", Balance: "+balance+
+				", Rate: "+rate+"%");
 		
 	}
 	
