@@ -22,6 +22,7 @@ public class Current extends Account {
     }
 
     //methods specific for current account
+    @Override
     public String showInfo() {
 
         return (super.showInfo() + " Your Current Account features"
@@ -30,19 +31,7 @@ public class Current extends Account {
 
     }
 
-    public String returnInfo() {
-
-        return ("Name: " + name
-                + ", Account Number: " + accountNumber
-                + ", Adhaar: " + adhaar
-                + ", Balance: " + balance
-                + ", Rate: " + rate + "%"
-                + ", Your Savings Account Features"
-                + ", Your Current Account features"
-                + ", Debit Card Number is " + debitCardNumber
-                + ", Debit Card Pin is " + debitCardPin);
-
-    }
+    
 
     private void setDebitCard() {
         Random random = new Random();

@@ -300,7 +300,7 @@ public class BankGui extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void pathTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pathTextActionPerformed
-
+        
     }//GEN-LAST:event_pathTextActionPerformed
 
     private void pathButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pathButtonActionPerformed
@@ -387,7 +387,7 @@ public class BankGui extends javax.swing.JFrame {
     }//GEN-LAST:event_selectButtonActionPerformed
 
     private void sNoTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sNoTextActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_sNoTextActionPerformed
 
     private void depositButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_depositButtonActionPerformed
